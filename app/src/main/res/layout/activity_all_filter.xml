@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllFilterActivity"
+    android:background="@drawable/filter_border_custom"
+    >
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSortBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/filter_sort_by"
+        android:textAlignment="textStart"
+        android:textColor="@color/filter_title"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRecommended"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/filter_sort_recommended"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSortBy"
+        android:textSize="13dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/high_black"
+        />
+
+    <CheckBox
+        android:id="@+id/cbRecommended"
+        android:layout_width="0dp"
+        android:width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSortBy"
+        android:buttonTint="@color/high_black"
+        android:button="@drawable/checkbox_custom_transaction"
+        android:clickable="true"
+        android:gravity="center_vertical"
+
+        />
+
+    <TextView
+        android:id="@+id/tvPopularity"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/filter_sort_popularity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecommended"
+        android:textSize="13dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/high_black"
+
+        />
+
+    <CheckBox
+        android:id="@+id/cbPopularity"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbRecommended"
+        android:buttonTint="@color/high_black"
+
+        />
+
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/filter_sort_rating"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPopularity"
+        android:textSize="13dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/high_black"
+        />
+
+    <CheckBox
+        android:id="@+id/cbRating"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbPopularity"
+        android:buttonTint="@color/high_black"
+        />
+
+    <TextView
+        android:id="@+id/tvSaving"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/filter_sort_saving"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRating"
+        android:textSize="13dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/high_black"
+        />
+
+    <CheckBox
+        android:id="@+id/cbSaving"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbRating"
+        android:buttonTint="@color/high_black"
+        />
+
+    <TextView
+        android:id="@+id/tvDistance"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/filter_sort_distance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSaving"
+        android:textSize="13dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/high_black"
+        />
+
+    <CheckBox
+        android:id="@+id/cbDistance"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbSaving"
+        android:buttonTint="@color/high_black"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/tvDistance"
+        >
+
+        <include layout="@layout/include_filter_view" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/filter_category"
+        android:textAlignment="textStart"
+        android:textColor="@color/filter_title"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearView1" />
+
+
+    <TextView
+        android:id="@+id/tvCategoryPlacehore1"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/filter_category_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategory"
+        android:textSize="13dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/high_black"
+        />
+
+    <CheckBox
+        android:id="@+id/cbCategoryPlacehore1"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategory"
+        android:buttonTint="@color/high_black"
+        />
+
+    <TextView
+        android:id="@+id/tvCategoryPlacehore2"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/filter_category_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategoryPlacehore1"
+        android:textSize="13dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/high_black"
+        />
+
+    <CheckBox
+        android:id="@+id/cbCategoryPlacehore2"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbCategoryPlacehore1"
+        android:buttonTint="@color/high_black"
+        />
+
+    <TextView
+        android:id="@+id/tvCategoryPlacehore3"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/filter_category_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategoryPlacehore2"
+        android:textSize="13dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/high_black"
+        />
+
+    <CheckBox
+        android:id="@+id/cbCategoryPlacehore3"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbCategoryPlacehore2"
+        android:buttonTint="@color/high_black"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategoryPlacehore3"
+        >
+
+        <include layout="@layout/include_filter_view" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/filter_brand"
+        android:textAlignment="textStart"
+        android:textColor="@color/filter_title"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearView2"
+        />
+
+    <TextView
+        android:id="@+id/tvBrandPlacehore"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/filter_category_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBrand"
+        android:textSize="13dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/high_black"
+        />
+
+    <CheckBox
+        android:id="@+id/cbBrandPlacehore"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBrand"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/filter_button_border"
+        android:backgroundTint="@color/high_black"
+        android:text="@string/apply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
