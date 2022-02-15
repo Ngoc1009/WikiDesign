@@ -99,4 +99,26 @@
         android:textStyle="bold"
         />
 
+    <TextView
+        android:id="@+id/tvCategoryActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Selected Category"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tvPlaceholderActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Selected Placeholder"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
 </LinearLayout>

@@ -21,6 +21,7 @@
     <color name="light_green">#A9C1C0</color>
     <color name="grey">#9FAAB2</color>
     <color name="greyOpaque">#F9F9F9</color>
+    <color name="grey9B">#9B9B9B</color>
     <color name="lightGrey">#cccccc</color>
     <color name="brightGrey">#585859</color>
     <color name="brightGreyTransparent">#d6696969</color>
@@ -47,6 +48,8 @@
     <color name="textSteelGrey">#41444C</color>
     <color name="textWhite">#FFFFFF</color>
     <color name="filter_title">#707070</color>
+    <color name="greyC3">#C3C3C3</color>
+    <color name="goldSelected">#9F703A</color>
 
     <color name="dividerColor">#33000000</color>
     <color name="white">#FFFFFF</color>

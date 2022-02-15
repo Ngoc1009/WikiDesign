@@ -2,13 +2,12 @@ package com.example.wikidesign;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
-import android.os.Binder;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
 
-import butterknife.BindView;
+import com.example.wikidesign.categoryPlaceholder.CategoryPlaceHolderActivity;
+import com.example.wikidesign.categorySelected.RecyclerViewMultipleSelectedActivity;
+import com.example.wikidesign.filter.AllFilterActivity;
+
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -61,5 +60,15 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.tvWelcome)
     void OnClickWelcome(){
         WelcomeActivity.startMe(this);
+    }
+
+    @OnClick(R.id.tvCategoryActivity)
+    void OnClickCategory(){
+        RecyclerViewMultipleSelectedActivity.startMe(this);
+    }
+
+    @OnClick(R.id.tvPlaceholderActivity)
+    void OnClickPlaceholder(){
+        CategoryPlaceHolderActivity.startMe(this);
     }
 }

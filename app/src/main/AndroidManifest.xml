@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WikiDesign">
         <activity
-            android:name=".AllFilterActivity"
+            android:name=".categoryPlaceholder.CategoryPlaceHolderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".categorySelected.RecyclerViewMultipleSelectedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".filter.AllFilterActivity"
             android:exported="false" />
         <activity
             android:name=".LandingActivity"

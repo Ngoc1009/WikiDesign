@@ -8,7 +8,7 @@
 
     <ImageView
         android:id="@+id/ivLoginArrowBack"
-        android:src="@drawable/ic_arrow_back"
+        android:src="@drawable/ic_arrow_back_white"
         style="@style/ToolbarIcon"/>
 
     <TextView

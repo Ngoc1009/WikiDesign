@@ -49,7 +49,7 @@
     <string name="forgot_password">Forgot Password?</string>
     <string name="enable_touch">Enable Touch ID</string>
     <string name="enable_face">Enable Face ID</string>
-    <string name="welcome_button">Next</string>
+    <string name="next">Next</string>
     <string name="registration">Please wait while we set personalised content up for you.</string>
     <string name="hi_profile">Hi, Kevin</string>
     <string name="preferences_profile"><b>Set your interest preferences now, Kevin</b>.\nWhat would you like to experience with us?</string>
@@ -75,7 +75,10 @@
     <string name="filter_sort_distance">Distance</string>
     <string name="filter_category_placeholder">Category Placeholder</string>
     <string name="apply">Apply</string>
-
+    <string name="reset">Reset</string>
+    <string name="skip">Skip</string>
+    <string name="selected_category_description">Please select a few categories that you would like to experience with us.</string>
+    <string name="pick_description">Pick at least five.</string>
 
     <string name="limit_file">Some of the images you have selected exceed 2MB.</string>
     <string name="error_something_went_wrong">Something went wrong</string>
