@@ -159,9 +159,7 @@
     <string name="sale_not_started">COMING SOON</string>
     <string name="sale_over">SALE OVER</string>
     <string name="txt_sold_out">COMING SOON</string>
-    
 
-    
 
     <!--estore item-->
     <string name="label_estore_item_count_down">ENDS IN</string>

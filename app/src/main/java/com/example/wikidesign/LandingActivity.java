@@ -21,12 +21,14 @@ import android.widget.TextView;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
+import com.example.wikidesign.drawerNavigation.DrawerNavigationDialogFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.j256.ormlite.stmt.query.In;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class LandingActivity extends AppCompatActivity {
 
@@ -85,4 +87,13 @@ public class LandingActivity extends AppCompatActivity {
 //            }
 //        }
 //    }
+
+
+
+    @OnClick(R.id.ivNavigation_toolbar)
+    void openDrawerNavigationMenu(){
+        DrawerNavigationDialogFragment.newInstance().show(getSupportFragmentManager(), "Navigation");
+    }
+
+
 }

@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ngocn/AndroidStudioProjects/WikiDesign/app/src/main/res/drawable-v24/custom_shape.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/ngocn/AndroidStudioProjects/WikiDesign/app/src/main/res/drawable-v24/square_orchid.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/ngocn/AndroidStudioProjects/WikiDesign/app/src/main/res/drawable/background_estore_button.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/ngocn/AndroidStudioProjects/WikiDesign/app/src/main/res/drawable/bottom_indicator_custom.xml" value="0.18489583333333334" />
         <entry key="..\:/Users/ngocn/AndroidStudioProjects/WikiDesign/app/src/main/res/drawable/bottom_navigation_menu.xml" value="0.26614583333333336" />
@@ -21,6 +22,7 @@
         <entry key="..\:/Users/ngocn/AndroidStudioProjects/WikiDesign/app/src/main/res/drawable/filter_button_border.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/ngocn/AndroidStudioProjects/WikiDesign/app/src/main/res/drawable/ic_arrow_back.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/ngocn/AndroidStudioProjects/WikiDesign/app/src/main/res/drawable/ic_check_box_black.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/ngocn/AndroidStudioProjects/WikiDesign/app/src/main/res/drawable/ic_close.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/ngocn/AndroidStudioProjects/WikiDesign/app/src/main/res/drawable/ic_navigation_menu.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/ngocn/AndroidStudioProjects/WikiDesign/app/src/main/res/drawable/item_checkbox.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/ngocn/AndroidStudioProjects/WikiDesign/app/src/main/res/drawable/profile_preferences_custom.xml" value="0.26614583333333336" />
@@ -46,6 +48,7 @@
         <entry key="..\:/Users/ngocn/AndroidStudioProjects/WikiDesign/app/src/main/res/layout/design_bottom_navigation_item.xml" value="0.851063829787234" />
         <entry key="..\:/Users/ngocn/AndroidStudioProjects/WikiDesign/app/src/main/res/layout/fragment_category_child.xml" value="0.4" />
         <entry key="..\:/Users/ngocn/AndroidStudioProjects/WikiDesign/app/src/main/res/layout/fragment_category_parent.xml" value="0.25" />
+        <entry key="..\:/Users/ngocn/AndroidStudioProjects/WikiDesign/app/src/main/res/layout/fragment_drawer_navigation_dialog.xml" value="0.264" />
         <entry key="..\:/Users/ngocn/AndroidStudioProjects/WikiDesign/app/src/main/res/layout/fragment_selected_category.xml" value="0.264" />
         <entry key="..\:/Users/ngocn/AndroidStudioProjects/WikiDesign/app/src/main/res/layout/fragment_selected_category_child.xml" value="0.25" />
         <entry key="..\:/Users/ngocn/AndroidStudioProjects/WikiDesign/app/src/main/res/layout/fragment_selected_category_parent.xml" value="0.25" />
