@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignInActivity"
+    tools:context=".SignInAndRegisterActivity"
     android:background="@drawable/splash_screen"
     >
 
@@ -110,6 +110,7 @@
             android:layout_height="match_parent"
             android:background="@drawable/button_sign_in_custom"
             android:layout_marginLeft="5dp"
+
             >
 
             <RelativeLayout
@@ -121,6 +122,7 @@
                 android:focusable="true">
 
                 <TextView
+                    android:id="@+id/tvSignIn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"

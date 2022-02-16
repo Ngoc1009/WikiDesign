@@ -40,6 +40,8 @@
     <string name="splash_screen_text">25 HOURS</string>
     <string name="sign_in_text">Headtitle goes here</string>
     <string name="welcome_user">Welcome, Kevin</string>
+    <string name="completed_setup">Preferences setup completed</string>
+    <string name="completed_description">Please wait while we set personalised content up for you.</string>
     <string name="sign_in_description">Description goes here. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.</string>
     <string name="sign_in_explore">Explore</string>
     <string name="sign_in_button">Sign In</string>
@@ -146,19 +148,20 @@
     <string name="event">Events</string>
 
 
-    <string name="travel_all_caps">TRAVEL</string>
+    <string name="bottom_menu_discover">DISCOVER</string>
     <string name="renewal_payment">Payment</string>
-
-    <string name="wine_all_caps"><![CDATA[WINE & DINE]]></string>
-    <string name="home_all_caps">HOME</string>
-    <string name="shopping_all_caps">SHOPPING</string>
+    <string name="bottom_menu_buy">BUY</string>
+    <string name="bottom_menu_event">EVENTS</string>
+    <string name="bottom_menu_privileges">PRIVILEGES</string>
     <string name="wellness_all_caps">WELLNESS</string>
     <string name="flash_sales_all_caps">FLASH SALES</string>
     <string name="membership_all_caps">MEMBERSHIP SERVICES</string>
     <string name="sale_not_started">COMING SOON</string>
     <string name="sale_over">SALE OVER</string>
-
     <string name="txt_sold_out">COMING SOON</string>
+    
+
+    
 
     <!--estore item-->
     <string name="label_estore_item_count_down">ENDS IN</string>
@@ -479,4 +482,6 @@
   </string>
     <string name="buzz">Buzz</string>
     <string name="tryagain">Try Again</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

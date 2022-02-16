@@ -5,8 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.wikidesign.categoryPlaceholder.CategoryPlaceHolderActivity;
-import com.example.wikidesign.categorySelected.RecyclerViewMultipleSelectedActivity;
 import com.example.wikidesign.filter.AllFilterActivity;
+import com.example.wikidesign.interestingSelected.SelectedCategoryActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.tvSignIn)
     void OnClickSignIn(){
-        SignInActivity.startMe(this);
+        SignInAndRegisterActivity.startMe(this);
     }
 
     @OnClick(R.id.tvSplashScreen)
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.tvCategoryActivity)
     void OnClickCategory(){
-        RecyclerViewMultipleSelectedActivity.startMe(this);
+        SelectedCategoryActivity.startMe(this);
     }
 
     @OnClick(R.id.tvPlaceholderActivity)

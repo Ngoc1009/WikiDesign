@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WikiDesign">
         <activity
+            android:name=".interestingSelected.SelectedCategoryActivity"
+            android:exported="false" />
+        <activity
             android:name=".categoryPlaceholder.CategoryPlaceHolderActivity"
             android:exported="false" />
         <activity
@@ -19,7 +22,7 @@
             android:name=".filter.AllFilterActivity"
             android:exported="false" />
         <activity
-            android:name=".LandingActivity"
+            android:name=".SplashScreenActivity"
             android:exported="false" />
         <activity
             android:name=".RegistrationCompletedActivity"
@@ -28,13 +31,13 @@
             android:name=".WelcomeActivity"
             android:exported="false" />
         <activity
-            android:name=".SignInActivity"
+            android:name=".SignInAndRegisterActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".LandingActivity"
             android:exported="false" />
         <activity
             android:name=".ProfileActivity"

@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.example.wikidesign.MainActivity;
 import com.example.wikidesign.R;
+import com.example.wikidesign.interestingSelected.InterestingMultipleListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -90,7 +91,7 @@ public class RecyclerViewMultipleSelectedActivity extends AppCompatActivity impl
         category9.name = "Hottest Restaurants";
         categoryList.add(category9);
 
-        CategorySelectedAdapter categorySelectedAdapter = new CategorySelectedAdapter(categoryList, this);
+        CategorySelectedAdapter categorySelectedAdapter = new CategorySelectedAdapter(categoryList,  this);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
         recyclerView.setHasFixedSize(false);
         categorySelectedAdapter.setData(categoryList);

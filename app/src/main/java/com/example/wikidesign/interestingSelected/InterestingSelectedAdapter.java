@@ -1,4 +1,5 @@
-package com.example.wikidesign.categorySelected;
+package com.example.wikidesign.interestingSelected;
+
 
 import android.graphics.Color;
 import android.view.LayoutInflater;
@@ -9,55 +10,34 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.core.graphics.drawable.DrawableCompat;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.wikidesign.R;
-import com.example.wikidesign.filter.FilterModel;
-import com.example.wikidesign.filter.FilterbyTransactionAdapter;
-import com.example.wikidesign.interestingSelected.InterestingMultipleListener;
-import com.google.common.io.Resources;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.annotation.Resource;
+public class InterestingSelectedAdapter extends RecyclerView.Adapter<InterestingSelectedAdapter.ViewHolder> {
 
-public class CategorySelectedAdapter extends RecyclerView.Adapter<CategorySelectedAdapter.ViewHolder> {
+    private List<Interesting> categoryList;
+    private InterestingMultipleListener listener;
 
-    private List<Category> categoryList;
-    private CategoryMultipleListener listener;
-
-    public CategorySelectedAdapter(List<Category> categoryList, CategoryMultipleListener listener) {
+    public InterestingSelectedAdapter(List<Interesting> categoryList, InterestingMultipleListener listener) {
         this.categoryList = categoryList;
         this.listener = listener;
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view =  LayoutInflater.from(parent.getContext()).inflate(R.layout.item_selected_category, parent, false);
-        ViewHolder holder = new ViewHolder(view);
-        return holder;
+    public InterestingSelectedAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_selected_category, parent, false);
+        ViewHolder viewHolder = new ViewHolder(view);
+        return viewHolder;
     }
 
-    @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.tvCategory.setText(categoryList.get(position).getName());
-        holder.imgCategory.setImageResource(categoryList.get(position).getImage());
-        holder.bind(categoryList.get(position));
-
-    }
-
-    @Override
-    public int getItemCount() {
-        return categoryList.size();
-    }
-
-    public List<Category> getSelectedCategory(){
-        List<Category> selectedList = new ArrayList<>();
-        for (Category category : categoryList){
+    public List<Interesting> getSelectedCategory(){
+        List<Interesting> selectedList = new ArrayList<>();
+        for (Interesting category : categoryList){
             if (category.isSelected == true){
                 selectedList.add(category);
 
@@ -66,9 +46,21 @@ public class CategorySelectedAdapter extends RecyclerView.Adapter<CategorySelect
         return selectedList;
     }
 
-    public void setData(List<Category> categoryList){
+    public void setData(List<Interesting> categoryList){
         this.categoryList = categoryList;
         notifyDataSetChanged();
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull InterestingSelectedAdapter.ViewHolder holder, int position) {
+        holder.tvCategory.setText(categoryList.get(position).getName());
+        holder.imgCategory.setImageResource(categoryList.get(position).getImage());
+        holder.bind(categoryList.get(position));
+    }
+
+    @Override
+    public int getItemCount() {
+        return categoryList.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
@@ -83,7 +75,7 @@ public class CategorySelectedAdapter extends RecyclerView.Adapter<CategorySelect
 
         }
 
-        void bind( Category category) {
+        void bind( Interesting category) {
 
             if (category.isSelected) {
                 imgCategory.setColorFilter(Color.parseColor("#9F703A"));
@@ -102,19 +94,19 @@ public class CategorySelectedAdapter extends RecyclerView.Adapter<CategorySelect
                         tvCategory.setTextColor(itemView.getResources().getColor(R.color.greyC3));
                         category.isSelected = false;
                         if (getSelectedCategory().size() < 5) {
-                            listener.onMultipleSelected(false);
+                            listener.onInterestingMultipleSelected(false);
 
                         }else {
-                            listener.onMultipleSelected(true);
+                            listener.onInterestingMultipleSelected(true);
                         }
                     } else {
                         imgCategory.setColorFilter(Color.parseColor("#9F703A"));
                         tvCategory.setTextColor(itemView.getResources().getColor(R.color.goldSelected));
                         category.isSelected = true;
                         if (getSelectedCategory().size() >= 5){
-                            listener.onMultipleSelected(true);
+                            listener.onInterestingMultipleSelected(true);
                         }else {
-                            listener.onMultipleSelected(false);
+                            listener.onInterestingMultipleSelected(false);
                         }
 
 
@@ -122,6 +114,5 @@ public class CategorySelectedAdapter extends RecyclerView.Adapter<CategorySelect
                 }
             });
         }
-        }
-
+    }
 }

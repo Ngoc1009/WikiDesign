@@ -21,7 +21,10 @@
 
   <TextView
       android:id="@+id/tvTitle_toolbar"
-      style="@style/ToolbarTitle"/>
+      style="@style/ToolbarTitle"
+      android:text="25 Hours"
+      android:textColor="@color/white"
+      />
 
   <ImageView
       android:id="@+id/ivFavorite_toolbar"
