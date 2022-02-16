@@ -84,14 +84,13 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@color/black"
+            android:paddingBottom="15dp"
+            app:itemBackground="@drawable/bottom_indicator_custom"
             app:itemIconSize="0dp"
             app:itemIconTint="@color/custom_bottom_navigation_bar_click"
             app:itemTextColor="@color/custom_bottom_navigation_bar_click"
             app:labelVisibilityMode="labeled"
-            app:menu="@menu/bottom_navigation_menu"
-            android:paddingBottom="18dp"
-            app:itemBackground="@drawable/bottom_indicator_custom"
-            />
+            app:menu="@menu/bottom_navigation_menu" />
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -127,7 +127,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/switchCompat"
+        android:id="@+id/switchTouchID"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
         android:layout_marginTop="415dp"
@@ -139,6 +139,7 @@
         />
 
     <TextView
+        android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
@@ -151,28 +152,40 @@
 
 
     <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchFaceID"
         android:layout_width="wrap_content"
         android:layout_height="27dp"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switchCompat"
+        app:layout_constraintTop_toBottomOf="@+id/switchTouchID"
         android:thumb="@drawable/switch_thumb"
         app:track="@drawable/switch_track"
         />
 
+    <TextView
+        android:id="@+id/tvAuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Login to use the app"
+        android:textColor="@color/greyC3"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@drawable/button_sign_in_custom"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_marginLeft="18dp"
         android:layout_marginRight="22dp"
         android:layout_marginBottom="30dp"
-        >
+        android:background="@drawable/button_sign_in_custom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <RelativeLayout
             android:id="@+id/btnSignIn"
