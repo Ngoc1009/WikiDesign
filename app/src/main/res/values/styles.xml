@@ -1,9 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
 
-  <style name="AppBottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
-    <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
-  </style>
 
   <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
 <!--    <item name="android:background">@drawable/rectangle_top_round_white</item>-->
@@ -156,6 +153,21 @@
 
   <style name="progressBarWhite" parent="@style/Theme.AppCompat">
     <item name="colorAccent">@color/white</item>
+  </style>
+
+<!--  help sheet bottom dialo custom-->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+  </style>
+
+  <style name="AppBottomSheetDialogTheme"
+      parent="Theme.Design.Light.BottomSheetDialog">
+    <item name="bottomSheetStyle">@style/AppModalStyle</item>
+  </style>
+
+  <style name="AppModalStyle"
+      parent="Widget.Design.BottomSheet.Modal">
+    <item name="android:background">@drawable/sheet_bottom_custom</item>
   </style>
 
 

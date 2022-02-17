@@ -20,7 +20,7 @@
 
 
         <ImageView
-            android:id="@+id/ivLoginToolbar"
+            android:id="@+id/ivIconHelp"
             style="@style/ToolbarBigIcon"
             android:src="@drawable/ic_more_horiz" />
 

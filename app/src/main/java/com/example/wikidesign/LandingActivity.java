@@ -69,24 +69,6 @@ public class LandingActivity extends AppCompatActivity {
 
     }
 
-//    private static void adjustGravity(View v) {
-//        if (v.getId() == com.google.android.material.R.id.smallLabel) {
-//            ViewGroup parent = (ViewGroup) v.getParent();
-//            parent.setPadding(0, 0, 0, 0);
-//
-//            FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) parent.getLayoutParams();
-//            params.gravity = Gravity.CENTER;
-//            parent.setLayoutParams(params);
-//        }
-//
-//        if (v instanceof ViewGroup) {
-//            ViewGroup vg = (ViewGroup) v;
-//
-//            for (int i = 0; i < vg.getChildCount(); i++) {
-//                adjustGravity(vg.getChildAt(i));
-//            }
-//        }
-//    }
 
 
 

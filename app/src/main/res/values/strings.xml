@@ -81,6 +81,8 @@
     <string name="skip">Skip</string>
     <string name="selected_category_description">Please select a few categories that you would like to experience with us.</string>
     <string name="pick_description">Pick at least five.</string>
+    <string name="operating_hours">Mon to Fri: 0900 to 1800\n Eve of PH: 0900 to 1300\n PH, Sat, Sun: Office Closed</string>
+
 
     <string name="limit_file">Some of the images you have selected exceed 2MB.</string>
     <string name="error_something_went_wrong">Something went wrong</string>
