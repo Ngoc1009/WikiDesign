@@ -100,10 +100,11 @@ public class LoginActivity extends AppCompatActivity {
 
             promptInfo = new BiometricPrompt.PromptInfo.Builder()
                     .setTitle("Biometric login for my app")
-                    .setConfirmationRequired(false)
                     .setSubtitle("Log in using your biometric credential")
                     .setNegativeButtonText("Use account password")
+                    .setConfirmationRequired(false)
                     .build();
+
             biometricPrompt.authenticate(promptInfo);
         }
     }
@@ -148,8 +149,8 @@ public class LoginActivity extends AppCompatActivity {
 
             promptInfo = new BiometricPrompt.PromptInfo.Builder()
                     .setTitle("Authentication for \"25Hours\" ")
-                    .setConfirmationRequired(true)
                     .setNegativeButtonText("Cancel")
+                    .setConfirmationRequired(true)
                     .build();
             biometricPrompt.authenticate(promptInfo);
         }
