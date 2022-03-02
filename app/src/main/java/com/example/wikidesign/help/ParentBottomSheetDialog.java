@@ -28,7 +28,7 @@ public class ParentBottomSheetDialog extends BottomSheetDialogFragment {
 
         BottomSheetDialog bottomSheetDialog = (BottomSheetDialog) super.onCreateDialog(savedInstanceState);
         bottomSheetDialog = new BottomSheetDialog(getActivity(), R.style.AppBottomSheetDialogTheme);
-        View view = LayoutInflater.from(getContext()).inflate(R.layout.parent_sheet_bottom_fragment, null);
+        View view = LayoutInflater.from(getContext()).inflate(R.layout.fragment_info_sheetbottom, null);
         bottomSheetDialog.setContentView(view);
         initView(view);
         tvHelpSign.setOnClickListener(new View.OnClickListener() {

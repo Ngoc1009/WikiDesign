@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/toolbar"
-    android:background="@color/black"
+    android:background="@color/transparent"
     style="@style/Toolbar"
     android:layout_marginTop="15dp"
     android:layout_marginLeft="10dp"

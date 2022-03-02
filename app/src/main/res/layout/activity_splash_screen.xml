@@ -5,28 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashScreenActivity"
-    android:background="@drawable/splash_screen"
+    android:background="@drawable/background_splash_one"
 
     >
 
-    <TextView
-        android:id="@+id/textView10"
+    <ImageView
+        android:id="@+id/imgLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="113dp"
-        android:layout_marginTop="313dp"
-        android:layout_marginEnd="117.82dp"
-        android:layout_marginBottom="313dp"
-        android:letterSpacing="0.3"
-        android:text="@string/splash_screen_text"
-        android:textColor="@color/white"
-        android:textSize="16dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="110dp"
+        android:background="@drawable/logo_25hours"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -36,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo"
         android:theme="@style/progressBarWhite"
         />
 

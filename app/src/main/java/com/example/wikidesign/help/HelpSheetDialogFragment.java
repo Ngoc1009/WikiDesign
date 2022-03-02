@@ -45,7 +45,7 @@ public class HelpSheetDialogFragment extends BottomSheetDialogFragment {
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         BottomSheetDialog dialog = (BottomSheetDialog) super.onCreateDialog(savedInstanceState);
         dialog = new BottomSheetDialog(getActivity(), R.style.AppBottomSheetDialogTheme);
-        View viewDialog = LayoutInflater.from(getContext()).inflate(R.layout.sheet_bottom_help_fragment, null);
+        View viewDialog = LayoutInflater.from(getContext()).inflate(R.layout.fragment_help_sheetbottom, null);
         dialog.setContentView(viewDialog);
         initView(viewDialog);
 

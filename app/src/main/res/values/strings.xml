@@ -141,6 +141,7 @@
     <string name="notice_body_favourite_no_item">Like something you see?\n Save them here to your
     favourites.
   </string>
+    <string name="discover_title">Ohmi A5 Wagyu Shabu 250g</string>
     <string name="notice_title_favourite_no_item">You have no favourites yet.</string>
     <string name="sample_product_title">Leone Blu</string>
     <string name="benefits_and_privileges"><![CDATA[Benefits & Privileges]]></string>
@@ -148,11 +149,13 @@
     <string name="label_partners">Partners</string>
     <string name="label_products">Products</string>
     <string name="event">Events</string>
+    <string name="discover_type_name">FIRE at 1-Atico</string>
+    <string name="discover_description">Features the traditional Argentine wood-fire and\nsummit of ION Orchard with breathtaking views</string>
 
 
     <string name="bottom_menu_discover">DISCOVER</string>
     <string name="renewal_payment">Payment</string>
-    <string name="bottom_menu_buy">BUY</string>
+    <string name="bottom_menu_shop">SHOP</string>
     <string name="bottom_menu_event">EVENTS</string>
     <string name="bottom_menu_privileges">PRIVILEGES</string>
     <string name="wellness_all_caps">WELLNESS</string>
@@ -381,6 +384,8 @@
     <string name="txt_processing_content">There was an error processing your order. \n Would you like
     to try again?
   </string>
+
+    <string name="learn_more">Learn More</string>
     <string name="try_again">Try again</string>
     <string name="txt_processing_booking">Processing your booking now …</string>
     <string name="title_order_error">Order Processing Error</string>
@@ -484,4 +489,7 @@
     <string name="tryagain">Try Again</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lorem_description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et…</string>
+    <string name="search_hi">Hi, Kevin\nWhat would you like to search?</string>
+    <string name="popular_keyword">Popular Keyword</string>
 </resources>

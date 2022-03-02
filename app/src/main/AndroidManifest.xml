@@ -3,8 +3,9 @@
     package="com.example.wikidesign">
 
     <uses-permission android:name="android.permission.USE_FINGERPRINT" />
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,6 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WikiDesign">
+        <activity
+            android:name=".videoView.VideoViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".shopCategoryList.ShopActivity"
+            android:exported="false" />
         <activity
             android:name=".interestingSelected.SelectedCategoryActivity"
             android:exported="false" />
